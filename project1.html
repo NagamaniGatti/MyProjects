@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing speed Test</title>
+    <link rel="stylesheet" href="Project.css"/>
+  </head>
+  <body style="background-image:url('https://img.rawpixel.com/private/static/images/website/2022-05/rm422-076-x.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=444e119094ef45a3248aa529fb696b2b'); background-repeat:no-repeat; background-size: 1500px;">
+    <div style="color: white;">
+    <h1 style="text-align: center;">
+    Test Your Typing Speed</h1>
+</div>
+    <div class="container">
+      <div class="stats">
+        <p>Time: <span id="timer">0s</span></p>
+        <p>Mistakes: <span id="mistakes">0</span></p>
+      </div>
+      <div
+        id="quote"
+        onmousedown="return false"
+        onselectstart="return false"></div>
+      <textarea 
+        rows="5"
+        id="quote-input"
+        placeholder="Start typing here....."></textarea>
+      <button id="start-test" onclick="startTest()">Start Test</button>
+      <button id="stop-test" onclick="displayResult()">Stop Test</button>
+      <div class="result">
+        <h3>Result</h3>
+        <div class="wrapper">
+          <p>Accuracy: <span id="accuracy"></span></p>
+          <p>Speed: <span id="wpm"></span></p>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="Project.js"></script>
+  </body>
+</html>
+
